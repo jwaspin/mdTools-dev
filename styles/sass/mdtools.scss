@@ -1,0 +1,131 @@
+@import 'loader';
+@import '../../bower_components/json-schema-viewer/styles/sass/json-schema-viewer';
+.center-text {
+  text-align: center;
+}
+.small-text {
+  font-size: .75em;
+}
+/*****Translator*****/
+#textarea-translator {
+  height: auto !important;
+  overflow-y: auto;
+}
+
+#translator-page {
+  background-color: #DEF0F9;
+
+  #translation-results {
+    display: none;
+    overflow: hidden;
+    background-color: #F4F8F9;
+    padding: 1em;
+
+    pre {
+      width: 98%;
+      margin: auto;
+      overflow: auto;
+      background-color: #FFF;
+      padding: 10px;
+    }
+
+    &.error {
+      background-color: $error-color;
+    }
+
+    &.valid {
+      background-color: $valid-color;
+    }
+  }
+
+}
+
+#translator-page {
+  height: 100%;
+}
+
+#translator-page .section {
+  padding: 1em;
+}
+
+#translator-page .drag {
+  background-color: #CBFF8B;
+}
+
+
+/*****Codes******/
+#codes-page .ui-panel-wrapper {
+  overflow: auto;
+}
+
+.md-header-btn.ui-btn.ui-corner-all {
+  border-radius: .3125em;
+  padding: .25em;
+  margin: 0;
+}
+
+#mdcodes-detail {
+
+  #mdcodes-tab-2, #mdcodes-tab-3 {
+    overflow-x: auto;
+  }
+
+  .ui-tabs {
+    margin-top: 2em;
+
+    tr:hover {
+      background-color: #EDFFD8;
+    }
+  }
+
+  .ui-tabs-nav, .mdtable-md {
+    max-width: 40em;
+
+    a {
+      border-bottom: 0;
+    }
+  }
+
+}
+
+#mdcodes-panel .mdcodes-selected a {
+  background-color: #EDFFD8;
+}
+
+.mdsection-corners {
+
+  .ui-bar {
+    -webkit-border-top-left-radius: inherit;
+    border-top-left-radius: inherit;
+    -webkit-border-top-right-radius: inherit;
+    border-top-right-radius: inherit;
+  }
+
+  .ui-body {
+    border-top-width: 0;
+    -webkit-border-bottom-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    -webkit-border-bottom-right-radius: inherit;
+    border-bottom-right-radius: inherit;
+  }
+
+  table th {
+    margin-top: 0;
+  }
+}
+
+
+/*****Buttons******/
+.ui-icon-translate:after {
+  background-image: url("../images/translate_white.png");
+  background-size: 20px 20px;
+}
+
+//override JQM active button background
+.ui-page-theme-a .ui-btn.ui-btn-active, html .ui-bar-a .ui-btn.ui-btn-active, html .ui-body-a .ui-btn.ui-btn-active, html body .ui-group-theme-a .ui-btn.ui-btn-active, html head+body .ui-btn.ui-btn-a.ui-btn-active, .ui-page-theme-a .ui-checkbox-on:after, html .ui-bar-a .ui-checkbox-on:after, html .ui-body-a .ui-checkbox-on:after, html body .ui-group-theme-a .ui-checkbox-on:after, .ui-btn.ui-checkbox-on.ui-btn-a:after, .ui-page-theme-a .ui-flipswitch-active, html .ui-bar-a .ui-flipswitch-active, html .ui-body-a .ui-flipswitch-active, html body .ui-group-theme-a .ui-flipswitch-active, html body .ui-flipswitch.ui-bar-a.ui-flipswitch-active, .ui-page-theme-a .ui-slider-track .ui-btn-active, html .ui-bar-a .ui-slider-track .ui-btn-active, html .ui-body-a .ui-slider-track .ui-btn-active, html body .ui-group-theme-a .ui-slider-track .ui-btn-active, html body div.ui-slider-track.ui-body-a .ui-btn-active {
+    background-color: #00A3DA;
+}
+
+//@import '../../bower_components/json-schema-viewer/styles/sass/highlight';
+//@import '../../bower_components/json-schema-viewer/styles/sass/welcome';
+@import 'logo';

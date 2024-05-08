@@ -1,0 +1,56 @@
+{
+  "title": "mdJSON Schema Viewer",
+  "name": "mdtools",
+  "description": "Visualize mdJSON schemas using D3.js",
+  "version": "1.1.2",
+  "homepage": "https://github.com/adiwg/mdTools",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adiwg/mdTools.git"
+  },
+  "author": {
+    "name": "Josh Bradley"
+  },
+  "//": "The following FQDN is the endpoint for your assets (no trailing slash):",
+  "production": "http://www.adiwg.org/mdTools",
+  "licenses": [
+    {
+      "type": "Unlicense",
+      "url": "http://unlicense.org/"
+    }
+  ],
+  "dependencies": {
+    "bower": "^1.8.14",
+    "grunt": "~1",
+    "grunt-bower-task": "~0",
+    "grunt-cli": "~1",
+    "grunt-contrib-clean": "~1",
+    "grunt-contrib-concat": "~1",
+    "grunt-contrib-copy": "~1",
+    "grunt-contrib-jshint": "~1",
+    "grunt-contrib-sass": "~1",
+    "grunt-contrib-uglify": "~2",
+    "grunt-contrib-watch": "~1",
+    "grunt-env": "~0",
+    "grunt-preprocess": "~5",
+    "mdcodes": "2.9.2",
+    "mdjson-schemas": "2.9.1"
+  },
+  "scripts": {
+    "build": "grunt prod",
+    "deploy": "gh-pages -d docs",
+    "dev": "grunt dev",
+    "start": "grunt",
+    "watch": "grunt watch",
+    "test": "http-server -p 8080 docs/"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "grunt-browserify": "^5.0",
+    "grunt-contrib-connect": "^1.0",
+    "grunt-dart-sass": "^2.0.1",
+    "json2csv": "^3.7",
+    "mustache": "^2.3",
+    "sass": "^1.69.5"
+  }
+}
